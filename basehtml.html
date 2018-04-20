@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link rel="stylesheet" a href="cssforbase.css" type="text/css">
+ 	        <meta name = "viewport" content = "width = device-width,initial-scale = 1.0">
+ 	        <meta charset="utf-8">
+	        <title>Image Editor</title>
+		    <link rel="icon" href="icon.jpg">
+    </head>
+    
+    
+    <body>
+        <script src = "http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <script src = "jsfile.js">
+        </script>
+        <div id = "candiv">
+        <canvas id = "can"></canvas>
+  
+        <div id = "butt">
+         <input type="file" multiple="false" accept="image/*" id="finput" onchange="uplode()">
+         <input type="button" id = "reset" onclick="cleeear()" value="clear">
+         <input type="button" id = "reset" onclick="reset()" value="reset">
+            <p>this is made by changing in each pixels not by css filters and supported by every browsers</p>
+            <div class="red">
+            <p>red</p>
+            <input type="range" min ="0" max = "100" value = "0" onchange="dored()" id = "sldrred">
+            </div>
+             <div class="red">
+            <p>grey scale</p>
+            <input type="range" min ="0" max = "100" value = "0" onchange="dogrey()" id = "sldrgrey">
+            </div>
+             <div class="red">
+            <p>make rainbow</p>
+            <input type="range" min ="0" max = "100" value = "0" onchange="dorain()" id = "sldrrain">
+            </div>
+             <div class="red">
+            <p>blur</p>
+            <input type="range" min ="0" max = "100" value = "0" onchange="doblur()" id = "sldrblur">
+            </div>
+        </div>
+   </body>
+</html>
